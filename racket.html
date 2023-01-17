@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .field{
+            border: 2px solid rgb(20, 195, 20);
+            height: 600px;
+            width: 600px;
+        }
+        .racket{
+            margin-top: 250px;
+            margin-left: 30px;
+            
+            transition:transform 1s ease-in ;
+        }
+        
+        .ball{
+              border: 1px solid gray;
+              width: 30px;
+              height: 30px;
+              border-radius: 50%;
+              background-color: gray;
+              position: relative;
+              bottom: 185px;
+              left: 115px;
+              transition: transform 1s ease-out 1s;
+        }
+        .field:hover .racket{
+        
+            transform: rotate(45deg);
+            transform-origin: bottom top;
+
+        }
+        .field:hover .ball{
+            transform: translate(200px, -100px);
+            
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="field">
+        <img class="racket" src="images/racket.png" alt="">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
